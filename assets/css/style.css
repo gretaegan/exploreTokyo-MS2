@@ -5,10 +5,12 @@
 .custom-nav {
     font-family: 'Raleway',sans-serif;
     font-size: 22px;
+    color: #ffb6c1;
 }
 
 .navbar-brand {
     font-size: 28px;
+    color: #ffb6c1
 }
 
 /*--------Hero Image section*/
@@ -35,7 +37,8 @@
     font-family: 'Raleway',sans-serif;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #a9a9a9;
+    color: #ffb6c1;
+    padding-bottom: 20px;
 }
 
 .hero-txt {
@@ -51,7 +54,7 @@
 }
 
 
-/*--------Explore section*/
+/*---------Explore section*/
 
 .area-pics {
     justify-content: space-around;
@@ -104,7 +107,6 @@ div#map {
 .btn-area {
     background-color: #ffb6c1;
     color: #a9a9a9;
-    align-items: center;
 }
 
 .info-hdg {
@@ -122,3 +124,5 @@ div#map {
     margin: auto;
     padding-bottom: 20px;
 }
+
+
