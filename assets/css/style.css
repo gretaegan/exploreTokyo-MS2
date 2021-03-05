@@ -35,19 +35,19 @@
     font-family: 'Raleway',sans-serif;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #fafafa;
+    color: #a9a9a9;
 }
 
 .hero-txt {
     font-family: 'Raleway',sans-serif;
     padding-top: 15px;
     text-align: center;
-    color: blanchedalmond;
+    color: #a9a9a9;
 }
 
 .explore-btn {
     color: blanchedalmond;
-    border: 2px solid blanchedalmond;
+    border: 2px solid #ffb6c1;
 }
 
 
@@ -93,5 +93,32 @@
 }
 
 div#map {
-    min-height: 300px;
+    min-height: 360px;
+}
+
+.map-container {
+    padding-top: 40px;
+    padding-bottom: 28px;
+}
+
+.btn-area {
+    background-color: #ffb6c1;
+    color: #a9a9a9;
+    align-items: center;
+}
+
+.info-hdg {
+    font-family: 'Raleway',sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.info-txt {
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
 }
