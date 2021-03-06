@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 /*-------------Navbar*/
 
 .custom-nav {
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Architects Daughter',cursive;
     font-size: 22px;
     color: #ffb6c1;
 }
@@ -34,7 +35,7 @@
 }
 
 .hero-hdg {
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Architects Daughter', cursive;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #ffb6c1;
@@ -84,7 +85,7 @@
     left: 35%;
     color: #fafafa;
     font-size: 38px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Architects Daughter', cursive;
     letter-spacing: 3px;
     font-weight: 500;
 }
@@ -106,11 +107,11 @@ div#map {
 
 .btn-area {
     background-color: #ffb6c1;
-    color: #a9a9a9;
+    color: #fafafa;
 }
 
 .info-hdg {
-    font-family: 'Raleway',sans-serif;
+    font-family: 'Architects Daughter', cursive;
     font-size: 36px;
     text-align: center;
     padding-top: 40px;
@@ -126,3 +127,47 @@ div#map {
 }
 
 
+/*---------Highlights section*/
+
+.highlights-hdg {
+    font-family: 'Architects Daughter', cursive;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.highlights-hdg-sm {
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.picks-container {
+    justify-content: space-around;
+    display: flex;
+}
+
+.highlight-box {
+    position: relative;
+    width:70%;
+    height: auto;
+    margin: auto;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.highlight-pic {
+    object-fit: cover;
+    width: 100%;
+    height: 40vh;
+}
+
+.btn-hi {
+    background-color: #ffb6c1;
+    color: #fafafa;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
