@@ -38,7 +38,7 @@
     font-family: 'Architects Daughter', cursive;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #ffb6c1;
+    color: #fafafa;
     padding-bottom: 20px;
 }
 
@@ -46,13 +46,32 @@
     font-family: 'Raleway',sans-serif;
     padding-top: 15px;
     text-align: center;
-    color: #a9a9a9;
+    color: #fafafa;
 }
 
 .explore-btn {
-    color: blanchedalmond;
+    color: #fafafa;
     border: 2px solid #ffb6c1;
 }
+
+/*---------About section*/
+
+.tokyo-info {
+    font-family: 'Architects Daughter',cursive;
+    letter-spacing: 3px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.about-container {
+    align-items: center;
+}
+
+.small-hr {
+    border-top: solid #ffb6c1 4px;
+}
+
 
 
 /*---------Explore section*/
