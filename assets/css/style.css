@@ -143,6 +143,15 @@ div#map {
     text-align: center;
 }
 
+.hdg-container {
+    background-image: url("../images/japan-hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 100%;
+}
+
 .picks-container {
     justify-content: space-around;
     display: flex;
@@ -170,4 +179,16 @@ div#map {
     padding-top: 5px;
     margin-top: 10px;
     margin-left: 80px;
+}
+
+.picks-hdg {
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pink-line {
+    color: #ffb6c1;
+    border-top: 4px solid;
 }
