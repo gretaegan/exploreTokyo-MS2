@@ -211,3 +211,9 @@ div#map {
     color: #ffb6c1;
     border-top: 4px solid;
 }
+
+.hidden-card {
+    text-align: center;
+    font-family: 'Raleway',sans-serif;
+    padding: 10 10 10 10;
+}
