@@ -17,8 +17,8 @@
            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle naviagation">
              <span class="navbar-toggler-icon"></span>
          </button>
-          <div class="collapse navbar-collapse" id="navMenu">
-              <ul class="navbar-nav">
+          <div id="navMenu" class="collapse navbar-collapse">
+              <ul class="navbar-nav mx-auto nav-links">
                   <li class="nav-item">
                       <a href="#areas" class="nav-link"> Explore </a>
                   </li>
@@ -51,7 +51,7 @@
                             It has three main gardens, in Japanese, English and French styles and over 1500 cherry blossom trees that 
                             bloom magnificantly in spring. </p>
                     </div>
-                    <button class="btn btn-hi" id="btn-1"> See More </button>
+                    <button class="btn btn-hi" id="btn-1"> Click Me! </button>
                 </div>
             </div>
             <div class="col-md-4">
@@ -65,7 +65,7 @@
                             used for traditional Shinto weddings.
                         </p>
                     </div>
-                    <button class="btn btn-hi" id="btn-2"> See More </button>
+                    <button class="btn btn-hi" id="btn-2"> Click Me! </button>
                 </div>
             </div>
             <div class="col-md-4">
@@ -78,7 +78,7 @@
                             anime and manga shops. 
                         </p>
                     </div>
-                    <button class="btn btn-hi" id="btn-3"> See More </button>
+                    <button class="btn btn-hi" id="btn-3"> Click Me! </button>
                 </div>
             </div>
             <div class="row">
@@ -86,54 +86,65 @@
                     <div class="highlight-box">
                         <h3 class="picks-hdg"> Senso-Ji Temple </h3>
                         <img src="assets/images/asakusa-sensoji.jpg" alt="sensoji" class="img-fluid highlight-pic">
-                        <div id="highlight-4">
+                        <div id="highlight-4" style="display: none;">
                             <p class="hidden-card">
                                 Senso-ji is an ancient Buddhist temple located in Asakusa, Tokyo, Japan. It is Tokyo's oldest temple and one of its most significant.
                                  Formerly associated with the Tendai sect of Buddhism, it became independent after World War II. Adjacent to the temple is a Shinto shrine, the Asakusa Shrine.
                             </p>
                         </div>
-                        <button class="btn btn-hi" id="btn-4"> See More </button>
+                        <button class="btn btn-hi" id="btn-4"> Click Me! </button>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="highlight-box">
                         <h3 class="picks-hdg"> Takeshita Dori </h3>
                         <img src="assets/images/takeshita.jpg" alt="takeshita" class="img-fluid highlight-pic">
-                        <div id="highlight-5">
+                        <div id="highlight-5" style="display: none;">
                             <p class="hidden-card">
                                 Takeshita-dōri is a pedestrian shopping street lined with fashion boutiques, cafes and restaurants in Harajuku in Tokyo, Japan. 
                                 Stores on Takeshita Street include some larger chains but also many small independent shops that carry an array of styles.
                             </p>
                         </div>
-                        <button class="btn btn-hi" id="btn-5"> See More </button>
+                        <button class="btn btn-hi" id="btn-5"> Click Me! </button>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="highlight-box">
                         <h3 class="picks-hdg"> Tokyo Skytree </h3>
                         <img src="assets/images/skytree.jpg" alt="skytree" class="img-fluid highlight-pic">
-                        <div id="highlight-6">
+                        <div id="highlight-6" style="display: none;">
                             <p class="hidden-card">
                                 The Tokyo Skytree is a television broadcasting tower and landmark of Tokyo. It is the centerpiece of the Tokyo Skytree Town in the Sumida City
                                  Ward, not far away from Asakusa. It is the tallest structure in Japan and the second tallest in the world at the time of its completion. 
                             </p>
                         </div>
-                        <button class="btn btn-hi" id="btn-6"> See More </button>
+                        <button class="btn btn-hi" id="btn-6"> Click Me! </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!-------------------End of Highlights section-->
 
+<!--------Contact Form-->
 
+<section>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="name"> Name </label>
+            <input type="text" class="form-control control-label" id="name" placeholder="Enter name">
+        </div>
+    <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control control-label" id="exampleInputEmail1" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+       </div>
+  <button type="submit" class="btn btn-hi">Submit!</button>
+</form>
+</section>
 
-
-
-
-
-
-
+<!--------End of Contact Form-->
 
 
 <!-------------Footer-->
