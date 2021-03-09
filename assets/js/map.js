@@ -1,5 +1,4 @@
 
-var labels = [];
 
 const locations = {
     shinjuku: {
@@ -16,9 +15,41 @@ const locations = {
     }
 }
 
+// Code to initialize the mao //
+
+
+function initMap() {
+    var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 10,
+        center: {
+            lat: 35.69883763050049,
+            lng: 139.76283314117453
+        }
+    });
+}
+
+// Code to display map and show area sections //
+
+
+$(document).ready(function(){
+    $('#shinjukupic').on('click', function(){
+        $('#shinjuku-info').show();
+    })
+
+    $('#shibuyapic').on('click', function(){
+        $('#shibuya-info').show();
+    })
+
+    $('#asakusapic').on('click', function(){
+        $('#asakusa-info').show();
+    })
+});
+
+
+
+
+
 // Change center of map - https://stackoverflow.com/questions/28499141/how-to-change-google-map-center-by-clicking-a-button// 
-
-
 function newLocation(newLat, newLng) {
     map.setCenter({
         lat: newLat,
@@ -28,15 +59,15 @@ function newLocation(newLat, newLng) {
 
 $(document).ready(function(){
 
-    $('#shinjuku-info').on('click' , function(){
+    $('#shinjukupic').on('click' , function(){
         newLocation(35.70724705599633, 139.7120326497082);
     });
 
-    $('#shibuya-info').on('click' , function(){
+    $('#shibuyapic').on('click' , function(){
         newLocation(35.6693138677115, 139.69646301791374);
     });
 
-    $('#asakusa-info').on('click' , function(){
+    $('#asakusapic').on('click' , function(){
         newLocations(35.71537424874052, 139.79714056750478);
     });
 })
