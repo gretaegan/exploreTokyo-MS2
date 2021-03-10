@@ -27,7 +27,7 @@ $(document).ready(function(){
 
 });
 
-//Code to Show areas section// 
+//Code to show Areas section// 
 
 function toggle(id) {
     var toggleArea = document.getElementById(id).style.display;
