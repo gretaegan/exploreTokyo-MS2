@@ -1,13 +1,16 @@
 //Initiate the Map// 
 let map;
+let service;
+let infowindow;
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         center: new google.maps.LatLng(35.67876072537644, 139.76763965965216),
-        zoom: 10
+        zoom: 13
     });
-}
 
+
+}
 
 
 //Code to change the center of the map (found at https://stackoverflow.com/questions/28499141/how-to-change-google-map-center-by-clicking-a-button)//
@@ -40,39 +43,26 @@ $(document).ready(function ()
 	});
 });
 
-const shinjuku = {
-    bars: {
-        lat: 35.69488,
-        lng: 139.70251,
 
-        lat: 35.68549,
-        lng: 139.69074,
+// google Places library- (code help found at https://developers.google.com/maps/documentation/javascript/places#place_search_requests)//
 
-        lat: 35.69412,
-        lng: 139.70476
-    },
-
-    restaurants: {
-        lat: 35.68770,
-        lng: 139.70212,
-
-        lat: 35.68549,
-        lng: 139.69074,
-
-        lat: 35.69208,
-        lng: 139.70322
-    },
-
-    hotels: {
-        lat: 35.69288,
-        lng: 139.69093,
-
-        lat: 35.69104,
-        lng: 139.70621,
-
-        lat: 35.69109,
-        lng: 139.69125
+function typesOfPlaces(placeTypes) {
+    var request = {
+        location: map.getCenter(),
+        radius: 900,
+        types: placeTypes,
+        zoom: map.setZoom(13),
+    };
+    var service = new google.maps.places.PlacesService(map);
+    service.nearbySearch(request, callback);
+}
+function callback(results, status) {
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+    for (var i = 0; i < results.length; i++) {
+      var place = results[i];
+      createMarker(results[i]);
     }
+  }
 }
 
 
