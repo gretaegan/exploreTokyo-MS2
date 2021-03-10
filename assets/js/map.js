@@ -1,9 +1,8 @@
 //Initiate the Map// 
-
 let map;
 
 function initMap() {
-    map = new.google.maps.Map(document.getElementById("map"), {
+    map = new google.maps.Map(document.getElementById("map"), {
         center: {
             lat: 35.67876072537644,
             lng: 139.76763965965216
@@ -28,4 +27,6 @@ const locations = {
         lng: 139.79606768391602
     }
 }
+
+
 

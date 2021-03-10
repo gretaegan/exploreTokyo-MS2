@@ -26,3 +26,14 @@ $(document).ready(function(){
     })
 
 });
+
+//Code to Show areas section// 
+
+function toggle(id) {
+    var toggleArea = document.getElementById(id).style.display;
+    if (toggleArea == 'block') {
+        document.getElementById(id).style.display = 'none';
+    } else {
+        document.getElementById(id).style.display = 'block';
+    }
+}
