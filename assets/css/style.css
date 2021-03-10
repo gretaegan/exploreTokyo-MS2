@@ -218,3 +218,13 @@ div#map {
     font-family: 'Raleway',sans-serif;
     padding: 10 10 10 10;
 }
+
+
+
+/*---------Contact form section*/
+
+.contact-form {
+    margin: auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
