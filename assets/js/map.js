@@ -2,6 +2,7 @@
 let map;
 let service;
 let infowindow;
+let markers = [];
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
@@ -25,7 +26,7 @@ function newLocation(newLat, newLng) {
 
 
 
-$(document).ready(function ()
+$(document).ready(function()
 {
     $("#area-btn-1").on('click', function ()
     {
@@ -64,6 +65,52 @@ function callback(results, status) {
     }
   }
 }
+
+//Create markers for the map//
+
+
+function createMarker(place) {
+    var marker = new google.maps.Marker({
+        map: map,
+        position: place.geometry.location,
+        title: place.name,
+    });
+}
+
+//Code to clear markers//
+
+function clearMarkers() {
+    for (let i = 0; i < markers.length; i++) {
+        if (markers[i]) {
+            markers[i].setMap(null);
+        }
+    }
+    markers = [];
+}
+
+
+//Show markers on map with click function//
+
+
+$(document).ready(function(){
+    $('.bars').on('click' , function(){
+        typesOfPlaces('bar');
+        clearMarkers();
+    })
+
+    $('.restaurants').on('click', function(){
+        clearMarkers();
+        typesOfPlaces('restaurant');
+    })
+
+    $('.hotels').on('click', function(){
+        clearMarkers();
+        typesOfPlaces('hotel');
+    })
+})
+
+
+
 
 
 
