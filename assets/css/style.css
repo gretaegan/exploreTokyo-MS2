@@ -72,6 +72,11 @@
     border-top: solid #ffb6c1 4px;
 }
 
+.pink-line {
+    border-top: solid #ffb6c1 4px;
+    width: 80px;
+}
+
 
 
 /*---------Explore section*/
@@ -143,6 +148,16 @@ div#map {
     text-align: center;
     margin: auto;
     padding-bottom: 20px;
+}
+
+.map-link {
+    text-decoration: none!important;
+    color: black;
+
+}
+
+.map-link:hover {
+    color: #ffb6c1;
 }
 
 

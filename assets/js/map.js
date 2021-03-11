@@ -1,13 +1,13 @@
 //Initiate the Map// 
 let map;
 let service;
-let infowindow;
 let markers = [];
+let infowindow;
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
         center: new google.maps.LatLng(35.67876072537644, 139.76763965965216),
-        zoom: 13
+        zoom: 10
     });
 
 
@@ -21,7 +21,7 @@ function newLocation(newLat, newLng) {
         lat: newLat,
         lng: newLng,
     });
-    map.setZoom(12);
+    map.setZoom(13);
 }
 
 
@@ -52,64 +52,67 @@ function typesOfPlaces(placeTypes) {
         location: map.getCenter(),
         radius: 900,
         types: placeTypes,
-        zoom: map.setZoom(13),
+        zoom: map.setZoom(15),
     };
     var service = new google.maps.places.PlacesService(map);
     service.nearbySearch(request, callback);
 }
+
 function callback(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
+      console.log(results.length);
     for (var i = 0; i < results.length; i++) {
-      var place = results[i];
       createMarker(results[i]);
     }
   }
 }
 
-//Create markers for the map//
 
+//Create and Clear markers for the map - code help from Google Maps API Javascript documentation //
 
-function createMarker(place) {
-    var marker = new google.maps.Marker({
+function createMarker(place){
+    let marker = new google.maps.Marker ({
         map: map,
         position: place.geometry.location,
-        title: place.name,
+        title: place.name
     });
 }
 
-//Code to clear markers//
-
-function clearMarkers() {
+function clearMarkers(){
     for (let i = 0; i < markers.length; i++) {
         if (markers[i]) {
             markers[i].setMap(null);
         }
     }
-    markers = [];
 }
+
+
+
 
 
 //Show markers on map with click function//
 
 
 $(document).ready(function(){
+
     $('.bars').on('click' , function(){
         typesOfPlaces('bar');
         clearMarkers();
     })
 
     $('.restaurants').on('click', function(){
-        clearMarkers();
         typesOfPlaces('restaurant');
+        clearMarkers();
     })
 
     $('.hotels').on('click', function(){
-        clearMarkers();
         typesOfPlaces('hotel');
-    })
-})
+        clearMarkers();
+    });
+});
 
 
+//Code to make infowindow//
 
 
 
