@@ -238,8 +238,21 @@ div#map {
 
 /*---------Contact form section*/
 
-.contact-form {
-    margin: auto;
-    padding-bottom: 40px;
+.center-form {
+    padding-left: 350px;
+    padding-right: 350px;
     padding-top: 40px;
+    padding-bottom: 28px;
+}
+
+.contact-hdg {
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-top: 40px;
+}
+
+.contact-text {
+    font-family: 'Raleway',sans-serif;
+    padding-bottom: 20px;
 }
