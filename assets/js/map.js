@@ -2,7 +2,6 @@
 let map;
 let service;
 let markers = [];
-let infowindow;
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
@@ -54,24 +53,27 @@ function typesOfPlaces(placeTypes) {
         types: placeTypes,
         zoom: map.setZoom(15),
     };
-    var service = new google.maps.places.PlacesService(map);
-    service.nearbySearch(request, callback);
-}
 
-function callback(results, status) {
-  if (status == google.maps.places.PlacesServiceStatus.OK) {
-      console.log(results.length);
-    for (var i = 0; i < results.length; i++) {
-      createMarker(results[i]);
+    service = new google.maps.places.PlacesService(map);
+    service.nearbySearch(request, callback);
+
+    function callback(results, status) {
+        if (status == google.maps.places.PlacesServiceStatus.OK) {
+            clearMarkers();
+            for (var i = 0; i < results.length; i++) {
+                createMarker(results[i]);
+            }
+        }
     }
-  }
+
 }
+ 
 
 
 //Create and Clear markers for the map - code help from Google Maps API Javascript documentation //
 
 function createMarker(place){
-    let marker = new google.maps.Marker ({
+   let marker = new google.maps.Marker ({ 
         map: map,
         position: place.geometry.location,
         title: place.name
@@ -81,9 +83,10 @@ function createMarker(place){
 function clearMarkers(){
     for (let i = 0; i < markers.length; i++) {
         if (markers[i]) {
-            markers[i].setMap(null);
+        markers[i].setMap(null);
         }
     }
+    markers = [];
 }
 
 
@@ -96,24 +99,32 @@ function clearMarkers(){
 $(document).ready(function(){
 
     $('.bars').on('click' , function(){
-        typesOfPlaces('bar');
+        typesOfPlaces(['bar']);
         clearMarkers();
     })
 
     $('.restaurants').on('click', function(){
-        typesOfPlaces('restaurant');
+        typesOfPlaces(['restaurant']);
         clearMarkers();
     })
 
     $('.hotels').on('click', function(){
-        typesOfPlaces('hotel');
+        typesOfPlaces(['hotel']);
         clearMarkers();
     });
 });
 
 
-//Code to make infowindow//
+//Code to make infowindow (found at https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple)//
 
+let infowindow = new google.maps.InfoWindow({
+    content: place.name,
+  });
 
+ marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+
+  markers.push(marker);
 
 
