@@ -170,12 +170,8 @@ div#map {
 }
 
 .hdg-container {
-    background-image: url("../images/japan-hero.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 20vh;
-    width: 100%;
+    background-color: #ffb6c1;
+    color: #fafafa;
 }
 
 .picks-container {
