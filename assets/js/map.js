@@ -9,7 +9,6 @@ function initMap() {
         zoom: 10
     });
 
-
 }
 
 
@@ -78,6 +77,8 @@ function createMarker(place){
         position: place.geometry.location,
         title: place.name
     });
+
+    markers.push(marker);
 }
 
 function clearMarkers(){
@@ -124,7 +125,5 @@ let infowindow = new google.maps.InfoWindow({
  marker.addListener('click', function() {
     infowindow.open(map, marker);
   });
-
-  markers.push(marker);
 
 
