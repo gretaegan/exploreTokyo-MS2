@@ -1,7 +1,7 @@
 //Initiate the Map// 
 let map;
 let service;
-let markers = [];
+let mapMarkers = [];
 
 function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
@@ -78,16 +78,16 @@ function createMarker(place){
         title: place.name
     });
 
-    markers.push(marker);
+    mapMarkers.push(marker);
 }
 
 function clearMarkers(){
-    for (let i = 0; i < markers.length; i++) {
-        if (markers[i]) {
-        markers[i].setMap(null);
+    for (let i = 0; i < mapMarkers.length; i++) {
+        if (mapMarkers[i]) {
+        mapMarkers[i].setMap(null);
         }
     }
-    markers = [];
+    mapMarkers = [];
 }
 
 
