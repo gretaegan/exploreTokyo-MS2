@@ -3,7 +3,24 @@
 
 /*-------------Navbar*/
 
+.bg-dark {
+    background-color: #8c8586!important;
+}
 
+.navbar-brand {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 32px;
+}
+
+.nav-link {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 26px;
+    color: #fafafa;
+}
+
+.nav-link:hover {
+    color: #ffb6c1;
+}
 
 /*--------Hero Image section*/
 
@@ -22,12 +39,12 @@
     transform: translate(-50%, -50%);
     margin-left: 50%;
     margin-top: 40%;
-    height: 50%;
+    height: 30%;
 }
 
 .hero-hdg {
     font-family: 'Architects Daughter', cursive;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     font-size: 48px;
     text-transform: uppercase;
     color: #fafafa;
@@ -46,6 +63,11 @@
     border: 2px solid #ffb6c1;
 }
 
+.go-btn {
+    color: #fafafa!important;
+    text-decoration: none;
+}
+
 /*---------About section*/
 
 .tokyo-info {
@@ -58,6 +80,7 @@
 
 .about-container {
     align-items: center;
+    background-color: #f5edec;
 }
 
 .small-hr {
@@ -76,6 +99,12 @@
 .area-pics {
     justify-content: space-around;
     display: flex;
+}
+
+.area-options {
+    background-color: #a69094;
+    height: 80px;
+    align-items: center;
 }
 
 .explore-hdg {
@@ -119,6 +148,11 @@ div#map {
 .map-container {
     padding-top: 40px;
     padding-bottom: 40px;
+    background-color: #f5edec;
+}
+
+.map-area {
+    background-color: #f5edec;
 }
 
 .btn-area {
@@ -139,18 +173,20 @@ div#map {
     font-family: 'Raleway',sans-serif;
     text-align: center;
     margin: auto;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .map-link {
     text-decoration: none!important;
-    color: black;
-
+    color: #ffb6c1;
+    padding-top: 40px;
+    margin-top: 20px;
 }
 
 .map-link:hover {
-    color: #ffb6c1;
+    color: #fafafa;
 }
+
 
 
 
@@ -243,4 +279,9 @@ div#map {
 .contact-text {
     font-family: 'Raleway',sans-serif;
     padding-bottom: 20px;
+}
+
+
+.footer {
+    background-color: #a69094;
 }
