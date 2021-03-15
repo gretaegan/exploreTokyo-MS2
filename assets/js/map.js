@@ -71,6 +71,8 @@ function typesOfPlaces(placeTypes) {
 
 //Create and Clear markers for the map - code help from Google Maps API Javascript documentation //
 
+//Code to make infowindow (found at https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple)/
+
 function createMarker(place){
    let marker = new google.maps.Marker ({ 
         map: map,
@@ -79,6 +81,14 @@ function createMarker(place){
     });
 
     mapMarkers.push(marker);
+
+    const infowindow = new google.maps.InfoWindow({
+    content: place.name,
+  });
+
+  marker.addListener("click", () => {
+    infowindow.open(map, marker);
+  });
 }
 
 function clearMarkers(){
@@ -116,14 +126,7 @@ $(document).ready(function(){
 });
 
 
-//Code to make infowindow (found at https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple)//
 
-let infowindow = new google.maps.InfoWindow({
-    content: place.name,
-  });
 
- marker.addListener('click', function() {
-    infowindow.open(map, marker);
-  });
 
 
