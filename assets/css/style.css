@@ -15,22 +15,24 @@ body {
 /*-------------Navbar*/
 
 .bg-dark {
-    background-color: #745e62!important;
+    background-color: #2c3237!important;
 }
+
 
 .navbar-brand {
     font-family: 'Architects Daughter', cursive;
     font-size: 32px;
+    color: #E75480!important;
 }
 
-.nav-link {
+.nav-link, a {
     font-family: 'Architects Daughter', cursive;
     font-size: 26px;
-    color: #fafafa;
+    color:  #E75480!important;
 }
 
-.nav-link:hover {
-    color: #ffb6c1;
+a:hover {
+    color: #fafafa;
 }
 
 /*--------Hero Image section*/
@@ -87,11 +89,18 @@ body {
     padding-top: 40px;
     padding-bottom: 20px;
     text-align: center;
+    margin: auto;
+}
+
+.tokyo-para {
+    margin: auto;
+    text-align: center;
 }
 
 .about-container {
     align-items: center;
     background-color: #f5edec;
+    padding-bottom: 28px;
 }
 
 .small-hr {
@@ -100,8 +109,30 @@ body {
 
 .pink-line {
     border-top: solid #ffb6c1 4px;
-    width: 80px;
 }
+
+.icon-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.icon-fa {
+    margin: auto;
+    padding-left: 200px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #ffb6c1;
+}
+
+.icon-text {
+    font-family: 'Raleway',sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    color: #E75480;
+    padding-left: 180px;
+
+}
+
 
 
 
@@ -113,7 +144,7 @@ body {
 }
 
 .area-options {
-    background-color: #a69094;
+    background-color: #f5edec;
     height: 80px;
     align-items: center;
 }
@@ -216,10 +247,8 @@ div#map {
     padding-bottom: 40px;
     text-align: center;
 }
-
 .hdg-container {
-    background-color: #ffb6c1;
-    color: #fafafa;
+    padding-top: 40px;
 }
 
 .picks-container {
@@ -258,10 +287,6 @@ div#map {
     padding-bottom: 10px;
 }
 
-.pink-line {
-    color: #ffb6c1;
-    border-top: 4px solid;
-}
 
 .hidden-card {
     text-align: center;
