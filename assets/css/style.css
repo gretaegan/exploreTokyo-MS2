@@ -58,7 +58,7 @@ a:hover {
 .hero-hdg {
     font-family: 'Architects Daughter', cursive;
     letter-spacing: 5px;
-    font-size: 48px;
+    font-size: 42px;
     text-transform: uppercase;
     color: #fafafa;
     padding-bottom: 20px;
@@ -80,6 +80,8 @@ a:hover {
     color: #fafafa!important;
     text-decoration: none;
 }
+
+
 
 /*---------About section*/
 
@@ -118,7 +120,7 @@ a:hover {
 
 .icon-fa {
     margin: auto;
-    padding-left: 200px;
+    padding-left: 180px;
     padding-top: 20px;
     padding-bottom: 40px;
     color: #ffb6c1;
@@ -129,7 +131,7 @@ a:hover {
     text-transform: uppercase;
     padding-bottom: 40px;
     color: #E75480;
-    padding-left: 180px;
+    padding-left: 160px;
 
 }
 
@@ -322,5 +324,17 @@ div#map {
 
 
 .footer {
-    background-color: #a69094;
+    background-color: #2c3237;
+}
+
+.social-icon {
+    color: #E75480;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.footer-text {
+    color: #ffb6c1;
+    padding-top: 20px;
+    font-size: 22px;
 }
