@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
+/*---------Code to fix fixed-top navbar overlapping into other sections of the page found at https://stackoverflow.com/questions/11124777/twitter-bootstrap-navbar-fixed-top-overlapping-site*/
+body { 
+    padding-top: 40px;
+   }
+@media screen and (max-width: 768px) {
+
+    body { 
+        padding-top: 0px; 
+    }
+}
+
 /*-------------Navbar*/
 
 .bg-dark {
-    background-color: #8c8586!important;
+    background-color: #745e62!important;
 }
 
 .navbar-brand {
@@ -255,7 +266,10 @@ div#map {
 .hidden-card {
     text-align: center;
     font-family: 'Raleway',sans-serif;
-    padding: 10 10 10 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f5edec;
+
 }
 
 
