@@ -17,7 +17,7 @@
 <body>
 <!---------------------Navbar-->
 <header>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">Explore Tokyo</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu"
            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle naviagation">
@@ -146,8 +146,8 @@
                 <h5 class="contact-text"> Got a question? Leave your info below and one of our team will get back to you asap </h5>
                 <hr class="pink-line">
             </div>
-            <div class="contact-form">
-                <form onsubmit= "return sendMail(this)">
+            <div class="contact-box">
+                <form class="contact-form" onsubmit= "return sendMail(this)">
                     <div class="form-group">
                         <label for="fullname"> Full Name </label>
                         <input type="text" name="fullname" id="fullname" placeholder="Full Name" class="form-control">

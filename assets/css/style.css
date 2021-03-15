@@ -303,11 +303,10 @@ div#map {
 
 /*---------Contact form section*/
 
-.center-form {
-    padding-left: 350px;
-    padding-right: 350px;
-    padding-top: 40px;
-    padding-bottom: 28px;
+.contact-form {
+    margin: auto;
+    padding-bottom: 30px;
+    max-width: 60%;
 }
 
 .contact-hdg {
