@@ -38,12 +38,15 @@ a:hover {
 /*--------Hero Image section*/
 
 .hero-container {
-    padding-left: 0!important;
-    padding-right: 0!important;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
+
 .hero-image {
-    background-image: url("../images/shrine-cherry-blossom.jpg");
+    background-image: url("../images/tokyo-lanterns.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -57,9 +60,9 @@ a:hover {
     flex-direction: column;
     display: flex;
     height: 60px;
-    top: 60%;
-    right: 19%;
-    width: 480px;
+    top: 30%;
+    left: 19%;
+    width: 300px;
     color: #fafafa;
     font-size: 20px;
     letter-spacing: 2px;
