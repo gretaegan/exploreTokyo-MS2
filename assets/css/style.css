@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 /*---------Code to fix fixed-top navbar overlapping into other sections of the page found at https://stackoverflow.com/questions/11124777/twitter-bootstrap-navbar-fixed-top-overlapping-site*/
+
 body { 
     padding-top: 40px;
    }
@@ -21,14 +22,13 @@ body {
 
 .navbar-brand {
     font-family: 'Architects Daughter', cursive;
-    font-size: 32px;
-    color: #E75480!important;
+    color: #ffb6c1!important;
 }
 
 .nav-link, a {
     font-family: 'Architects Daughter', cursive;
     font-size: 26px;
-    color:  #E75480!important;
+    color:  #ffb6c1!important;
 }
 
 a:hover {
@@ -37,49 +37,47 @@ a:hover {
 
 /*--------Hero Image section*/
 
+.hero-container {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
 .hero-image {
-    background-image: url("../images/tokyo-blossoms.jpeg");
+    background-image: url("../images/shrine-cherry-blossom.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 80vh;
-    max-width: 100%;
+    height: 100vh;
+    width: 100%;
     position: relative;
 }
 
 .hero-text-box {
     position: absolute;
-    transform: translate(-50%, -50%);
-    margin-left: 50%;
-    margin-top: 40%;
-    height: 30%;
+    flex-direction: column;
+    display: flex;
+    height: 60px;
+    top: 60%;
+    right: 19%;
+    width: 480px;
+    color: #fafafa;
+    font-size: 20px;
+    letter-spacing: 2px;
+    align-items: center;
+
 }
 
-.hero-hdg {
-    font-family: 'Architects Daughter', cursive;
-    letter-spacing: 5px;
-    font-size: 42px;
-    text-transform: uppercase;
-    color: #fafafa;
-    padding-bottom: 20px;
-}
-
-.hero-txt {
-    font-family: 'Raleway',sans-serif;
-    padding-top: 15px;
-    text-align: center;
-    color: #fafafa;
-}
 
 .explore-btn {
-    color: #ffb6c1;
     border: 2px solid #ffb6c1;
 }
 
 .go-btn {
     color: #fafafa!important;
+    font-family: 'Architects Daughter',cursive;
     text-decoration: none;
 }
+
 
 
 
@@ -133,6 +131,21 @@ a:hover {
     color: #E75480;
     padding-left: 160px;
 
+}
+
+.hints-hdg {
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    letter-spacing: 3px;
+}
+
+.hints-list {
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 
@@ -306,7 +319,6 @@ div#map {
 .contact-form {
     margin: auto;
     padding-bottom: 30px;
-    max-width: 60%;
 }
 
 .contact-hdg {

@@ -12,18 +12,18 @@
 <!---------------------Navbar-->
 <header>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Explore Tokyo</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu"
-           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle naviagation">
+        <a class="navbar-brand" href="index.html">            
+        </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMenu">
              <span class="navbar-toggler-icon"></span>
          </button>
           <div id="navMenu" class="collapse navbar-collapse">
               <ul class="navbar-nav mx-auto">
                   <li class="nav-item mr-3">
-                      <a href="#areas" class="nav-link"> About </a>
+                      <a href="index.html" class="nav-link"> About </a>
                   </li>
                   <li class="nav-item mr-3">
-                      <a href="#areas" class="nav-link"> Explore </a>
+                      <a href="explore.html" class="nav-link"> Explore </a>
                   </li>
                    <li class="nav-item mr-3">
                        <a href="highlights.html" class="nav-link"> Highlights </a>
@@ -40,11 +40,21 @@
 <!---------Hero image section-->
 
 <section>
-    <div class="container-fluid">
-        <div class="hero-image">
-            <div class="hero-text-box">
-                <h1 class="hero-hdg"> Explore Tokyo </h1>
-                <button class="btn btn-lg explore-btn"><a href="#areas" class="go-btn"> Lets Go! </a></button>
+    <div class="container-fluid hero-container">
+        <div class="row no-gutters">
+            <div class="col-sm-12">
+                <div class="hero-image">
+                 <div class="hero-text-box">
+                <p class="hero-text">
+                    From bustling neon-lit streets, to cherry-blossom filled parks, Tokyo is a city of contrasts.<br>
+                    Wether you are seeking a futuristic city adventure, or a historically rich tradiitonal escape, this is 
+                    a city with something for everybody. <br>
+                </p>
+                        <button class="btn explore-btn">
+                        <a href="explore.html" class="go-btn"> Explore </a>
+                    </button> 
+            </div>
+        </div>
             </div>
         </div>
     </div>
@@ -65,6 +75,31 @@
                      Originally a fishing village named Edo, Tokyo is now the political and economic capital of Japan, and the Tokyo Metropolitan area the 
                      most populated city on the planet.<br>
                      </p>
+                     <button id="tips-btn" class="btn btn-hi"> See More </button>
+                     <div id="hidden-hints" class="hints" style="display: none">
+                         <h3 class="hints-hdg"> Helpful Hints </h3>
+                         <p class="hints-list">
+                             <ul>
+                                 <li> The currency in Japan is the Japanese Yen (pronounced 'en'). ATM machines are not 
+                                     abundantly found, and not all cater to Western credit cards so be sure to bring some cash!
+                                 </li>
+                                 <li>
+                                     Tipping is not commonplace in Japan, and is also considered rude. So its best just to pay the bill as it is.
+                                 </li>
+                                 <li>
+                                     On entry to a more traditional guesthouse or restaurant you might be asked to remove your shoes and put on a pair of
+                                     slippers instead.
+                                 </li>
+                                 <li>
+                                     Talking loudly on the subway is considered rude, as is eating on the street!
+                                 </li>
+                                 <li>
+                                     While the official language spoken is Japanese, all subway and street signs are in English too, and many Japanese are 
+                                     happy to practise their English on you.
+                                 </li>
+                             </ul>
+                         </p>
+                     </div>
             </div>
         </div>
     </div>
@@ -86,137 +121,6 @@
         </div>
     </div>
 </section>
-
-
-<!-------Explore section-->
-
-<section id="areas">
-    <div class="container-fluid">
-        <h2 class="explore-hdg"> Click on a picture to Explore </h2>
-        <hr class="pink-line">
-        <div class="row area-pics">
-            <div class="col-md-4">
-                <div class="area-card">
-                    <a href="#shinjuku" id="shinjukupic">
-                    <img src="assets/images/shinjuku.jpg" alt="shinjuku" class="img-fluid img-card" onclick="toggle('shinjuku-info')">
-                    <h4 class="area-name"> Shinjuku</h4>
-                    <button class="btn btn-hi" id="area-btn-1"> Show on Map!</button>
-                </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="area-card">
-                    <a href="#shibuya" id="shibuyapic">
-                    <img src="assets/images/shibuya-pic.jpg" alt="shibuya" class="img-fluid img-card" onclick="toggle('shibuya-info')">
-                    <h4 class="area-name"> Shibuya</h4>
-                    <button class="btn btn-hi" id="area-btn-2">Show on Map!</button>
-                </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="area-card">
-                    <a href="#asakusa" id="asakusapic">
-                    <img src="assets/images/asakusa-2.jpeg" alt="asakusa" class="img-fluid img-card" onclick="toggle('asakusa-info')">
-                    <h4 class="area-name"> Asakusa</h4>
-                    <button class="btn btn-hi" id="area-btn-3">Show on Map!</button>
-                </a>
-                </div> 
-            </div>
-        </div>
-    </div>
-</section>
-<!------Shinjuku Section--->
-<section id="shinjuku-info" style="display: none;">
-    <h2 class="info-hdg"> Shinjuku </h2>
-    <hr class="pink-line">
-    <p class="info-txt"> Shinjuku is one of the most vibrant and exciting areas in all of Japan. One side is populated by ultra-high rise skyscrapers, housing hotels 
-        offices and government buildings. The other is where you'll find the neon signs, massive crowds and unique entertainment that people associate with Tokyo. 
-        Considered the nightlife capital of Tokyo, Shinjuku has it all. From the most sophisticated cocktail bars on the high floors of skyscrapers, 
-        to traditional Izakayas so small that they only fit a handful of patrons, there is something for everyone in this exciting area.
-    </p>
-    <div class="container-fluid area-options">
-        <div class="row">
-            <div class="col-md-4">
-                    <a href="#map" class="bars map-link">
-                        <h3> Bars <i class="fa fa-beer" aria-hidden="true"></i> </h3>
-                    </a>
-            </div>
-            <div class="col-md-4">
-                    <a href="#map" class="restaurants map-link">
-                        <h3> Restaurants <i class="fa fa-cutlery" aria-hidden="true"></i> </h3>
-                    </a>
-            </div>
-            <div class="col-md-4">
-                    <a href="#map" class="hotels map-link">
-                        <h3> Hotels <i class="fa fa-bed" aria-hidden="true"></i> </h3>
-                    </a>
-                </div>
-            </div>
-        </div>
-</section>
-
-<!--------Shibuya Section-->
-<section id="shibuya-info" style="display: none;">
-    <h2 class="info-hdg"> Shibuya </h2>
-    <hr class="pink-line">
-    <p class="info-txt">
-        Shibuya is the the popular shopping and entertainment area of Tokyo, found around Shibuya Station. It is home to the magnificent Meiji-Jingu, a Shinto shrine where tourists and 
-        Japanese alike flock for serenity in the midst of the busy city atmosphere. Only a few meters from Meiji Jingu is the vibrant and busy Takeshita street in Harajuku,
-        where you can see the unique street fashion of young Japanese fashionistas. But what Shibuya is most known for is the world famous Shibuya Crossing, a busy yet 
-        orderly crossroads known as the busiest crosswalk in the whole world. Grab a coffee at the Starbucks beside the station and watch as masses of pedestrians scramble across.
-    </p>
-    <div class="container-fluid area-options">
-        <div class="row">
-            <div class="col-md-4">
-                    <a href="#map" class="bars map-link">
-                        <h3> Bars <i class="fa fa-beer" aria-hidden="true"></i> </h3>
-                    </a>
-            </div>
-            <div class="col-md-4">
-                    <a href="#map" class="restaurants map-link">
-                        <h3> Restaurants <i class="fa fa-cutlery" aria-hidden="true"></i> </h3>
-                    </a>
-            </div>
-            <div class="col-md-4">
-                    <a href="#map" class="hotels map-link">
-                        <h3> Hotels <i class="fa fa-bed" aria-hidden="true"></i> </h3>
-                    </a>
-                </div>
-            </div>
-        </div>
-</section>
-
-<!-------------Asakusa Section-->
-<section id="asakusa-info" style="display: none;">
-    <h2 class="info-hdg"> Asakusa </h2>
-    <hr class="pink-line">
-    <p class="info-txt">
-        Asakusa is an area in the Taito prefecture where an atmosphere of the Tokyo of past decades survives.
-        Asakusa's main attraction is Sensoji, a very popular Buddhist temple, built in the 7th century. The temple is approached via Nakamise, a shopping street
-        that has been providing temple visitors with a variety of traditional, local snacks and tourist souvenirs for centuries. If you are coming to Tokyo in search of 
-        a traditional experience, Asakusa is where you will find it.
-    </p>
-    <div class="container-fluid area-options">
-        <div class="row">
-            <div class="col-md-4">
-                    <a href="#map" class="bars map-link">
-                        <h3> Bars <i class="fa fa-beer" aria-hidden="true"></i> </h3>
-                    </a>
-            </div>
-            <div class="col-md-4">
-                    <a href="#map" class="restaurants map-link">
-                        <h3> Restaurants <i class="fa fa-cutlery" aria-hidden="true"></i> </h3>
-                    </a>
-            </div>
-            <div class="col-md-4">
-                    <a href="#map" class="hotels map-link">
-                        <h3> Hotels <i class="fa fa-bed" aria-hidden="true"></i> </h3>
-                    </a>
-                </div>
-            </div>
-        </div>
-</section>
-
 
 
 <!-------------Footer-->
@@ -248,9 +152,6 @@
 <!-----------End of footer-->
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMLforz3xDblWjc7YTQq3gs6yTJFJjUrI&libraries=places&callback=initMap"></script>
 <script src="assets/js/main.js"></script>
-<script src="assets/js/map.js"></script>
 </body>
 </html>

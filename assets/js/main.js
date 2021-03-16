@@ -37,3 +37,13 @@ function toggle(id) {
         document.getElementById(id).style.display = 'block';
     }
 }
+
+
+//Code to display Hints section//
+
+$(document).ready(function(){
+
+    $('#tips-btn').on('click', function(){
+        $('#hidden-hints').toggle();
+    })
+});
