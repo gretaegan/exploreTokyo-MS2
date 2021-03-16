@@ -19,13 +19,13 @@
           <div id="navMenu" class="collapse navbar-collapse">
               <ul class="navbar-nav mx-auto">
                   <li class="nav-item mr-3">
-                      <a href="index.html" class="nav-link"> About </a>
+                      <a href="index.html" target="_blank" class="nav-link"> About </a>
                   </li>
                   <li class="nav-item mr-3">
-                      <a href="explore.html" class="nav-link"> Explore </a>
+                      <a href="explore.html" target="_blank" class="nav-link"> Explore </a>
                   </li>
                    <li class="nav-item mr-3">
-                       <a href="highlights.html" class="nav-link"> Highlights </a>
+                       <a href="highlights.html" target="_blank" class="nav-link"> Highlights </a>
                    </li>
                     <li class="nav-item mr-3">
                         <a href="#" target="_blank" class="nav-link"> Contact </a>
@@ -46,27 +46,27 @@
             <div class="col-md-4">
                 <div class="area-card">
                     <a href="#shinjuku" id="shinjukupic">
-                    <img src="assets/images/shinjuku.jpg" alt="shinjuku" class="img-fluid img-card" onclick="toggle('shinjuku-info')">
+                    <img src="assets/images/shinjuku.jpg" alt="shinjuku" class="img-fluid img-card" onclick="showMap('shinjuku')">
                     <h4 class="area-name"> Shinjuku</h4>
-                    <button class="btn btn-hi" id="area-btn-1"> Show on Map!</button>
+                    <button class="btn btn-hi" onclick="showMap('shinjuku')"> Show on Map</button>
                 </a>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="area-card">
                     <a href="#shibuya" id="shibuyapic">
-                    <img src="assets/images/shibuya-pic.jpg" alt="shibuya" class="img-fluid img-card" onclick="toggle('shibuya-info')">
+                    <img src="assets/images/shibuya-pic.jpg" alt="shibuya" class="img-fluid img-card" onclick="showMap('shibuya')">
                     <h4 class="area-name"> Shibuya</h4>
-                    <button class="btn btn-hi" id="area-btn-2">Show on Map!</button>
+                    <button class="btn btn-hi" onclick="showMap('shibuya')">Show on Map</button>
                 </a>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="area-card">
                     <a href="#asakusa" id="asakusapic">
-                    <img src="assets/images/asakusa-2.jpeg" alt="asakusa" class="img-fluid img-card" onclick="toggle('asakusa-info')">
+                    <img src="assets/images/asakusa-2.jpeg" alt="asakusa" class="img-fluid img-card" onclick="showMap('asakusa')">
                     <h4 class="area-name"> Asakusa</h4>
-                    <button class="btn btn-hi" id="area-btn-3">Show on Map!</button>
+                    <button class="btn btn-hi" onclick="showMap('asakusa')">Show on Map</button>
                 </a>
                 </div> 
             </div>
@@ -75,13 +75,10 @@
 </section>
 
 <!------Shinjuku Section--->
-<section id="shinjuku-info" style="display: none;">
-    <h2 class="info-hdg"> Shinjuku </h2>
+<section id="shinjuku-info">
+    <h2 id="info-header" class="info-hdg"> </h2>
     <hr class="pink-line">
-    <p class="info-txt"> Shinjuku is one of the most vibrant and exciting areas in all of Japan. One side is populated by ultra-high rise skyscrapers, housing hotels 
-        offices and government buildings. The other is where you'll find the neon signs, massive crowds and unique entertainment that people associate with Tokyo. 
-        Considered the nightlife capital of Tokyo, Shinjuku has it all. From the most sophisticated cocktail bars on the high floors of skyscrapers, 
-        to traditional Izakayas so small that they only fit a handful of patrons, there is something for everyone in this exciting area.
+    <p id="info-description" class="info-txt">
     </p>
     <div class="container-fluid area-options">
         <div class="row">
@@ -105,66 +102,9 @@
 </section>
 
 <!--------Shibuya Section-->
-<section id="shibuya-info" style="display: none;">
-    <h2 class="info-hdg"> Shibuya </h2>
-    <hr class="pink-line">
-    <p class="info-txt">
-        Shibuya is the the popular shopping and entertainment area of Tokyo, found around Shibuya Station. It is home to the magnificent Meiji-Jingu, a Shinto shrine where tourists and 
-        Japanese alike flock for serenity in the midst of the busy city atmosphere. Only a few meters from Meiji Jingu is the vibrant and busy Takeshita street in Harajuku,
-        where you can see the unique street fashion of young Japanese fashionistas. But what Shibuya is most known for is the world famous Shibuya Crossing, a busy yet 
-        orderly crossroads known as the busiest crosswalk in the whole world. Grab a coffee at the Starbucks beside the station and watch as masses of pedestrians scramble across.
-    </p>
-    <div class="container-fluid area-options">
-        <div class="row">
-            <div class="col-md-4">
-                    <a href="#map" class="bars map-link">
-                        <h3> Bars <i class="fa fa-beer" aria-hidden="true"></i> </h3>
-                    </a>
-            </div>
-            <div class="col-md-4">
-                    <a href="#map" class="restaurants map-link">
-                        <h3> Restaurants <i class="fa fa-cutlery" aria-hidden="true"></i> </h3>
-                    </a>
-            </div>
-            <div class="col-md-4">
-                    <a href="#map" class="hotels map-link">
-                        <h3> Hotels <i class="fa fa-bed" aria-hidden="true"></i> </h3>
-                    </a>
-                </div>
-            </div>
-        </div>
-</section>
 
 <!-------------Asakusa Section-->
-<section id="asakusa-info" style="display: none;">
-    <h2 class="info-hdg"> Asakusa </h2>
-    <hr class="pink-line">
-    <p class="info-txt">
-        Asakusa is an area in the Taito prefecture where an atmosphere of the Tokyo of past decades survives.
-        Asakusa's main attraction is Sensoji, a very popular Buddhist temple, built in the 7th century. The temple is approached via Nakamise, a shopping street
-        that has been providing temple visitors with a variety of traditional, local snacks and tourist souvenirs for centuries. If you are coming to Tokyo in search of 
-        a traditional experience, Asakusa is where you will find it.
-    </p>
-    <div class="container-fluid area-options">
-        <div class="row">
-            <div class="col-md-4">
-                    <a href="#map" class="bars map-link">
-                        <h3> Bars <i class="fa fa-beer" aria-hidden="true"></i> </h3>
-                    </a>
-            </div>
-            <div class="col-md-4">
-                    <a href="#map" class="restaurants map-link">
-                        <h3> Restaurants <i class="fa fa-cutlery" aria-hidden="true"></i> </h3>
-                    </a>
-            </div>
-            <div class="col-md-4">
-                    <a href="#map" class="hotels map-link">
-                        <h3> Hotels <i class="fa fa-bed" aria-hidden="true"></i> </h3>
-                    </a>
-                </div>
-            </div>
-        </div>
-</section>
+
 
 <!------------------Map-->
 <section class="map-area">
