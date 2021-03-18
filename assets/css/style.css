@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
+body {
+    overflow-x: hidden;
+    margin-left: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 /*---------Code to fix fixed-top navbar overlapping into other sections of the page found at https://stackoverflow.com/questions/11124777/twitter-bootstrap-navbar-fixed-top-overlapping-site*/
 
 body { 
@@ -114,42 +122,36 @@ a:hover {
     border-top: solid #ffb6c1 4px;
 }
 
-.icon-container {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-.icon-fa {
-    margin: auto;
-    padding-left: 180px;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    color: #ffb6c1;
-}
-
-.icon-text {
-    font-family: 'Raleway',sans-serif;
-    text-transform: uppercase;
-    padding-bottom: 40px;
-    color: #E75480;
-    padding-left: 160px;
-
-}
-
-.hints-hdg {
-    font-family: 'Architects Daughter', cursive;
+.offer-header {
+    font-family: 'Architects Daughter',cursive;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: auto;
-    letter-spacing: 3px;
+    font-size: 30px;
+    padding-top: 32px;
+    padding-bottom: 28px;
 }
 
-.hints-list {
+
+.offer-list {
     font-family: 'Raleway',sans-serif;
+    padding-bottom: 40px;
     text-align: center;
-    padding-bottom: 20px;
 }
+
+.btn-request {
+    background-color: #f37b8d;
+    color: #fafafa;
+    border: black 3px;
+    margin-top: 15px;
+}
+
+.brochure {
+    text-decoration: none!important;
+    color: #fafafa!important;
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+}
+
+
 
 
 
