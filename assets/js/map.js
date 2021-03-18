@@ -27,10 +27,7 @@ function initMap() {
 
 }
 
-
-//Code to change the center of the map (found at https://stackoverflow.com/questions/28499141/how-to-change-google-map-center-by-clicking-a-button)//
-
-function newLocation(newLat, newLng) {
+    function newLocation(newLat, newLng) {
     map.setCenter({
         lat: newLat,
         lng: newLng,
@@ -49,23 +46,10 @@ function showMap(place){
 }
 
 
-// $(document).ready(function()
-// {
-//     $("#area-btn-1").on('click', function ()
-//     {
-// 	  newLocation(35.70160153265351, 139.70945772909516);
-// 	});
-  
-// 	$("#area-btn-2").on('click', function ()
-//     {
-// 	  newLocation(35.66798901518934, 139.69586220310404);
-// 	});
-  
-//     $("#area-btn-3").on('click', function ()
-//     {
-// 	  newLocation(35.71857984352346, 139.7960891415878);
-// 	});
-// });
+//Code to change the center of the map (found at https://stackoverflow.com/questions/28499141/how-to-change-google-map-center-by-clicking-a-button)//
+
+
+
 
 
 

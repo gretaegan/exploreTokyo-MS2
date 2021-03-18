@@ -1,49 +1,29 @@
 //Code to toggle the highlights information //
 
 $(document).ready(function(){
-    $('#btn-1').on('click' , function(){
-        $('#highlight-1').toggle();
+    $('#btn-1').hover(function(){
+        $('#highlight-1').show(1000);
     })
 
-    $('#btn-2').on('click' , function(){
-        $('#highlight-2').toggle();
+    $('#btn-2').hover(function(){
+        $('#highlight-2').show(1000);
     })
 
-    $('#btn-3').on('click' , function(){
-        $('#highlight-3').toggle();
+    $('#btn-3').hover(function(){
+        $('#highlight-3').show(1000);
     })
 
-    $('#btn-4').on('click' , function(){
-        $('#highlight-4').toggle();
+    $('#btn-4').hover(function(){
+        $('#highlight-4').show(1000);
     })
 
-    $('#btn-5').on('click' , function(){
-        $('#highlight-5').toggle();
+    $('#btn-5').hover(function(){
+        $('#highlight-5').show(1000);
     })
 
-    $('#btn-6').on('click' , function(){
-        $('#highlight-6').toggle();
+    $('#btn-6').hover(function(){
+        $('#highlight-6').show(1000);
     })
 
 });
 
-//Code to show Areas section// 
-
-function toggle(id) {
-    var toggleArea = document.getElementById(id).style.display;
-    if (toggleArea == 'block') {
-        document.getElementById(id).style.display = 'none';
-    } else {
-        document.getElementById(id).style.display = 'block';
-    }
-}
-
-
-//Code to display Hints section//
-
-$(document).ready(function(){
-
-    $('#tips-btn').on('click', function(){
-        $('#hidden-hints').toggle();
-    })
-});
