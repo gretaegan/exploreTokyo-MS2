@@ -27,3 +27,23 @@ $(document).ready(function(){
 
 });
 
+
+// Code to dropdown list - (help from https://www.w3schools.com/howto/howto_js_dropdown.asp)// 
+
+function dropContent(){
+    document.getElementById('myDropdown').classList.toggle('show');
+}
+
+window.onclick = function(event){
+    if (!event.target.matches('.dropbtn')) {
+        var contentdrop = document.getElementsByClassName('.dropdown-content');
+        var i;
+        for(i = 0; i < contentdrop.length; i++){
+            var openContent = contentdrop[i];
+            if (openContent.classList.contains('show')){
+                openContent.classList.remove('show');
+            }
+        }
+    }
+};
+

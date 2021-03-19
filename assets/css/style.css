@@ -122,56 +122,37 @@ a:hover {
     border-top: solid #ffb6c1 4px;
 }
 
-.offers {
-    background-color: #d3d3d3;
-}
-
-.offer-header {
-    font-family: 'Architects Daughter',cursive;
-    text-align: center;
-    font-size: 30px;
-    padding-top: 32px;
-    padding-bottom: 28px;
-}
-
-.offer-header:hover {
-    text-decoration: underline;
-    color: #f37b8d;
-}
-
-
-.offer-list {
-    font-family: 'Raleway',sans-serif;
-    padding-bottom: 40px;
-    text-align: center;
-    list-style: none;
-}
-
-.btn-request {
-    background-color: #f37b8d;
-    color: #fafafa;
-    border: black 3px;
-    margin-top: 15px;
-    position: absolute;
-}
-
-.brochure {
-    text-decoration: none!important;
-    color: #fafafa!important;
-    font-family: 'Raleway',sans-serif;
+.dropbtn {
+    background-color: #f5edec;
+    color: #f56e82;
+    padding: 16px;
     font-size: 18px;
+    border: none;
+    cursor: pointer;
 }
 
-.offer-img {
-    object-fit: cover;
+.dropdown {
     position: relative;
-    height: 30vh;
+    display: inline-block;
 }
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: #f5edec;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
 
+.show {
+    display: block;
+}
 
-
-
+.offers {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 /*---------Explore section*/
 

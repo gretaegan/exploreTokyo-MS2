@@ -85,46 +85,28 @@
 
 <!--------What we offer Section--->
 
-<section class="offers">
-    <div class="container-fluid">
+<section>
+    <div class="container-fluid offers">
         <div class="row">
             <div class="col-sm-4 col-md-4">
-                <div class="offer-heading-box">
-                    <h4 class="offer-header"> What We Offer </h4>
-                    <img src="assets/images/japan-hero.jpg" alt="japan" class="img-fluid offer-img">
+                <div class="dropdown">
+                    <button onclick="dropContent()" class="dropbtn">What We Offer </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <ul>
+                            <li> Small group tours (3-5 people) </li>
+                            <li> Group tours (5+ people) </li>
+                            <li> Self guided tours </li>
+                            <li> Solo tours with tour guide </li>
+                        </ul>
+                    </div>
                 </div>
-               <div id="offer-info" style="display: none;">
-                   <ul class="offer-list">
-                       <li> Small Group tours (3-5 people) </li>
-                       <li> Large Group tours (5-15 people) </li>
-                       <li> Self guided solo tour </li>
-                       <li> Solo tour with guide </li>
-                   </ul>
-               </div>
+                
             </div>
             <div class="col-sm-4 col-md-4">
-                <div class="offer-content-box">
-                     <h4 class="offer-header"> Whats included </h4>
-                     <img src="assets/images/tokyo-day.jpg" alt="street" class="img-fluid offer-img">
-                </div>
-                <div id="included-offers" style="display: none;">
-                    <ul class="offer-list">
-                    <li> Your own experienced local tour guide </li>
-                    <li> JR Pass train ticket and subway card </li>
-                    <li> A personal portable wifi hotspot (1 per booking) </li>
-                    <li> Tickets to the Tokyo Skytree on day 1 of tour </li>
-                </ul>
-                </div>
+                
             </div>
             <div class="col-sm-4 col-md-4">
-                <div class="brochure-header">
-                    <h4 class="offer-header"> Request a Brochure </h4>
-                    <img src="assets/images/shrine-cherry-blossom.jpg" alt="shrine" class="img-fluid offer-img">
-                </div>
-                <button class="btn btn-lg btn-request">
-                    <a href="contact.html" class="brochure"> Request </a>
-                </button>
-            </div>
+                
         </div>
     </div>
 </section>
