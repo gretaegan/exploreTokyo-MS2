@@ -37,7 +37,7 @@ function initMap() {
 
 function showMap(place){
     const data = EXPLORE_DATA[place]
-    let lat, long = data.location
+    let [lat, long] = data.location
     console.log(data.location);
     newLocation(lat, long);
     $('#info-header').text(data.title);
