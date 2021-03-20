@@ -148,7 +148,7 @@ a:hover {
     color: #f5657b;
     margin-top: 12px;
     margin-bottom: 14px;
-    margin-left: 80px;
+    margin-left: 130px;
 }
 
 /*---------Explore section*/
@@ -249,12 +249,14 @@ div#map {
 
 /*---------Highlights section*/
 
+
 .highlights-hdg {
     font-family: 'Architects Daughter', cursive;
     padding-top: 40px;
     padding-bottom: 20px;
     text-align: center;
     letter-spacing: 3px;
+    
 }
 
 .highlights-hdg-sm {
@@ -308,7 +310,10 @@ div#map {
     font-family: 'Raleway',sans-serif;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: #f5edec;
+    border: solid 3px #ffb6c1;
 
 }
 
@@ -342,6 +347,10 @@ div#map {
     color: #ffb6c1;
     padding-top: 20px;
     padding-left: 50px;
+}
+
+.social-icon:hover {
+    color: #f5edec;
 }
 
 .footer-text {
