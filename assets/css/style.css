@@ -329,13 +329,23 @@ div#map {
 .contact-hdg {
     font-family: 'Architects Daughter', cursive;
     text-align: center;
-    letter-spacing: 3px;
     padding-top: 40px;
+    padding-bottom: 20px;
 }
 
 .contact-text {
     font-family: 'Raleway',sans-serif;
     padding-bottom: 20px;
+}
+
+.contact-banner {
+    background-image: url('../images/tokyo-blossoms.jpeg');
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
