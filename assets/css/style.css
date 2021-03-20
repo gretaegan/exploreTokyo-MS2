@@ -33,9 +33,6 @@ body {
     color:  #ffb6c1!important;
 }
 
-a:hover {
-    color: #cc5500!important;
-}
 
 /*--------Hero Image section*/
 
@@ -143,10 +140,15 @@ a:hover {
 
 .request-btn {
     background-color: #ffb6c1;
-    color: #f5657b;
     margin-top: 12px;
     margin-bottom: 14px;
     margin-left: 130px;
+}
+
+.request-link {
+    color: white!important;
+    text-decoration: none;
+    font-family: 'Raleway',sans-serif;
 }
 
 #tokyoCarousel {
@@ -154,6 +156,12 @@ a:hover {
     height: auto;
     width: 90%;
     padding-left: 20px;
+}
+
+.carousel-img {
+    height: auto;
+    width: 90%;
+    object-fit: cover;
 }
 
 /*---------Explore section*/
