@@ -42,13 +42,13 @@
 
 <section>
     <div class="container-fluid hero-container">
-        <div class="row no-gutters">
+        <div class="row g-0">
             <div class="col-sm-12">
                 <div class="hero-image">
                  <div class="hero-text-box">
                      <h2 class="hero-header"> Explore Tokyo </h2>
                 <p class="hero-text">
-                    From bustling neon-lit streets, to cherry-blossom filled parks, Tokyo is a city of contrasts.
+                    From ultra-tall skyscrapers to ancient Shrines, this city of contrasts is like no other.<br>
                 </p>
                         <button class="btn btn-lg explore-btn">
                         <a href="explore.html" class="go-btn"> Explore </a>
@@ -79,13 +79,54 @@
                      National parks and Shinto shrines sit amoungst busy shopping districts, and some of the subway stations are the busiest on earth. 
                      </p>
                 </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+<!--------Code for Carousel taken from the Bootstrap documentation ---------------->
+    <div id="tokyoCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#tokyoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#tokyoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#tokyoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/images/shibuyacrossing.jpg" class="d-block w-100" alt="shibuya crossing">
+      <div class="carousel-caption d-none d-md-block">
+        <h5> Shibuya Crossing</h5>
+        <p> See the organized chaos of the busiest crosswalk in the world </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/imperialpalace.jpg" class="d-block w-100" alt="imperial palace">
+      <div class="carousel-caption d-none d-md-block">
+        <h5> Imperial Palace </h5>
+        <p> A juxtaposition of East meets West </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/goldengai.jpg" class="d-block w-100" alt="street">
+      <div class="carousel-caption d-none d-md-block">
+        <h5> Golden Gai, Shinjuku </h5>
+        <p> Some Izakayas only big enough for two patrons, there are adventures down every alleyway </p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#tokyoCarousel"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#tokyoCarousel"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!---------end of Carousel------------>
         </div>
     </div>
 </section>
 
 <!--------What we offer Section--->
 
-<section>
+<section class="offers">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-4">

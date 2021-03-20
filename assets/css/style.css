@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
-body {
-    overflow-x: hidden;
-    margin-left: 0;
-    margin-left: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
+
 
 /*---------Code to fix fixed-top navbar overlapping into other sections of the page found at https://stackoverflow.com/questions/11124777/twitter-bootstrap-navbar-fixed-top-overlapping-site*/
 
@@ -40,7 +34,7 @@ body {
 }
 
 a:hover {
-    color: #fafafa;
+    color: #cc5500!important;
 }
 
 /*--------Hero Image section*/
@@ -48,10 +42,7 @@ a:hover {
 .hero-container {
     padding-left: 0;
     padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
 }
-
 
 .hero-image {
     background-image: url("../images/tokyo-hero-dusk.jpg");
@@ -66,15 +57,24 @@ a:hover {
 .hero-text-box {
     position: absolute;
     color: #fafafa;
-    font-size: 20px;
-    letter-spacing: 2px;
-    align-items: center;
+    font-size: 22px;
+    top: 30%;
+    left: 20%;
+}
 
+.hero-header {
+    font-family: 'Architects Daughter',cursive;
+    font-size: 42px;
+    letter-spacing: 3px;
 }
 
 
 .explore-btn {
     border: 2px solid #ffb6c1;
+}
+
+.explore-btn:hover {
+    background-color: #ffb6c1;
 }
 
 .go-btn {
@@ -92,7 +92,7 @@ a:hover {
     font-family: 'Architects Daughter',cursive;
     letter-spacing: 3px;
     padding-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     text-align: center;
     margin: auto;
 }
@@ -103,9 +103,8 @@ a:hover {
 }
 
 .about-container {
-    align-items: center;
-    background-color: #f5edec;
-    padding-bottom: 28px;
+    text-align: center;
+    padding-bottom: 38px;
 }
 
 .small-hr {
@@ -116,11 +115,9 @@ a:hover {
     border-top: solid #ffb6c1 4px;
 }
 
-
-
 .offers {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    background-color: #2c3237da;
+    color: #f5edec;
 }
 
 .offers-heading {
@@ -128,6 +125,7 @@ a:hover {
     font-family: 'Raleway',sans-serif;
     padding-top: 30px;
     padding-bottom: 26px;
+    color: #ffb6c1;
 }
 
 .offers-heading:hover {
@@ -149,6 +147,13 @@ a:hover {
     margin-top: 12px;
     margin-bottom: 14px;
     margin-left: 130px;
+}
+
+#tokyoCarousel {
+    padding-top: 24px;
+    height: auto;
+    width: 90%;
+    padding-left: 20px;
 }
 
 /*---------Explore section*/
@@ -350,7 +355,7 @@ div#map {
 
 
 .footer {
-    background-color: #2c3237;
+    background-color: #2c3237da;
 }
 
 .social-icon {
@@ -368,3 +373,6 @@ div#map {
     padding-top: 20px;
     font-size: 22px;
 }
+
+
+
