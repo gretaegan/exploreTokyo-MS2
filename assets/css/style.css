@@ -173,7 +173,6 @@ body {
 
 .area-options {
     background-color: #f5edec;
-    height: 80px;
     align-items: center;
 }
 
@@ -213,16 +212,23 @@ body {
 
 div#map {
     min-height: 360px;
+    padding-bottom: 50px;
 }
 
-.map-container {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #f5edec;
+
+.btn-choice {
+    background-color: #ffb6c1;
+    color: white;
+    border: solid 2px #2c3237;
+    width: 65%;
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 80px;
 }
 
-.map-area {
-    background-color: #f5edec;
+.btn-selections {
+    display: block;
 }
 
 .btn-area {
@@ -248,7 +254,7 @@ div#map {
 
 .map-link {
     text-decoration: none!important;
-    color: #ffb6c1;
+    color: white!important;
     padding-top: 40px;
     margin-top: 20px;
 }
