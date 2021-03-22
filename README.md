@@ -1,6 +1,6 @@
 # Explore Tokyo
 
-![a mockup of my site across various devices] <img src="assets/images/sitepic.jpg" style="margin: 0;">
+![a mockup of my site across various devices](responsive.jpg)
 
 This website is my second Milestone Project on the Code Institute Full Stack Web Developer Course.
 
@@ -224,16 +224,18 @@ to contact the company without any issues.
 EmailJS section was heavily referenced from the Rosie Project in the Interactive Frontend Development module of the course. 
 * Code Institute Slack community - Without the help and experiences of this community I would have not been able to solve many of the issues I had with coding this project. 
 * Google Chrome Developer Tools - DevTools provided endless help in finding busgs in my code, and testing my code via the console and Lighthouse. 
-* Google Maps API documentation- I have referenced all code help and code used in my map.js file. The documentation was heavily referenced and relied on to complete this 
+* [Google Maps API documentation](https://developers.google.com/maps/documentation/javascript/overview) and [Google Places Library](https://developers.google.com/maps/documentation/javascript/places)- I have referenced all code help and code used in my map.js file. The documentation was heavily referenced and relied on to complete this 
 project. 
-* EmailJS documentation- I referenced this while writing the code to make my contact page interactive. 
-* Stackoverflow- All code help and code that was sourced from Stack Overflow has been refereneced in comments in my code throughout this project. It was namely used for 
+* [EmailJS](https://www.emailjs.com/) documentation- I referenced this while writing the code to make my contact page interactive. 
+* [Stackoverflow](https://stackoverflow.com/)- All code help and code that was sourced from Stack Overflow has been refereneced in comments in my code throughout this project. It was namely used for 
  help with getting the Google Map to center when clicking on a button. 
 * [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) documentation was referenced for the Navbar and the Carousel on the home page. 
 * [W3Schools](https://www.w3schools.com/) - I often relied on W3 Schools website to gain a better understanding of using CSS to lay out my website, namely making my buttons vertically aligned on the 
   Explore page. 
 * [Font Awesome](https://fontawesome.com/) was used to provide the icons used throughout this project. 
 * [JQuery](https://jquery.com/) was used to make writing my Javascript code simplier.
+* [Figma](https://www.figma.com/) to create the wireframes for this project. 
+* [Tripadvisor](https://www.tripadvisor.ie/) for information on various attractions in Tokyo. 
 
 
 # Bugs and Fixes
@@ -254,17 +256,28 @@ This site was deployed through GitHub Pages. The steps I took to deploy were as 
 1. The site URL is visable on the green bar under the section header. This will remain there permanently and it can be referred back to at any time.
 
 ## Cloning
+1. Log into GitHub.
+1. Locate the repository.
+1. Click the 'Code' dropdown above the file list.
+1. Copy the URL for the repository.
+1. Open Git Bash on your device.
+1. Change the current working directory to the location where you want the cloned directory.
+1. Type git clone in the CLI and then paste the URL you copied earlier. This is what it should look like: $ git clone
+https://github.com/gretaegan/exploreTokyo-MS2.git
+1. Press Enter to create your local clone.
 
 
 # Credits 
 
-## Content and Resources 
-* Content was mainly written by myself. Any code that was not my own has been referenced in comments. 
-* In particular, [Google Maps API documentation](https://developers.google.com/maps/documentation/javascript/overview) and [Google Places Library](https://developers.google.com/maps/documentation/javascript/places) documentation were referenced often. 
- 
-* Code Institute Full Stack Software Developer course provided me with the knowledge and skills to be able to create this website. 
-* [Font Awesome](https://fontawesome.com/) was used to provide the icons used throughout this project. 
-* [JQuery](https://jquery.com/) was used to make writing my Javascript code simplier. 
+## Content
+* Content was mainly written by myself. Any code that was not my own has been referenced in comments and has been included in the Resources section of this READMe.
+* Photos from this project were sourced from : 
 
 
 # Acknowledgements 
+* To my mentor Oulawafemi Medale for his guidance and help with my project, and for his endless patience. 
+* To the tutor support team, in particular Igor and Cormac, who helped me to find the solutions to problems I had while coding this project. 
+* To the entire Slack community for providing help when I needed it, no matter how silly my questions seemed. 
+* To my cohort, the Springboard September 2020 group who have been an endless source of help, advice and laughs. 
+* To my family for putting up with my constant talking about my project and requests for coffee. 
+* To Code Institute for providing such an informative and exciting course that has brought me from zero coding experience, to completing this project. 
