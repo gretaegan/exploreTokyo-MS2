@@ -8,9 +8,9 @@
     <title>Explore Tokyo</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function() {
-            emailjs.init("user_goK3YO8xYPQ6W3SNbm4p0");
-            })();
+    (function(){
+        emailjs.init("user_goK3YO8xYPQ6W3SNbm4p0");
+        })();
 </script>
 </head>
 <body>
@@ -66,6 +66,8 @@
             </div>
             <div class="contact-box">
                 <form id="contactForm"  class="contact-form">
+                    <input type="hidden" name="contact_number">
+                    <label>Name</label>
                     <div class="mb-3">
                         <label for="name" class="form-label">Full Name </label>
                         <input type="text" name="from_name" class="form-control" id="name" placeholder="Your name">
@@ -82,7 +84,8 @@
                     <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="newslettercheck">
                         <label class="form-check-label" for="newslettercheck">Want to subscribe to our newsletter?</label>
-                    </div>  
+                    </div> 
+                    <input type="submit" value="Send">
                     <button type="submit" class="btn btn-hi"> Submit! </button>
                 </form>
             </div>

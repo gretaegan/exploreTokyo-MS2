@@ -5,8 +5,8 @@
 
             document.getElementById("contactForm").addEventListener("submit", function(event) {
                 event.preventDefault();
-                console.log(this);
-                emailjs.sendForm("service_jqwbfeg","gmail-tokyo", this)
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm("gmail","tokyo", this)
                     .then(function() {
                         alert("SUCCESS!.. a member of our team will get back to you shortly");
                     }, function(error) {
