@@ -66,17 +66,23 @@ body {
 
 
 .explore-btn {
-    border: 2px solid #ffb6c1;
+    background-color: #ffb6c1;
+    width: 50%;
 }
 
 .explore-btn:hover {
-    background-color: #ffb6c1;
+    
+    background-color: #f5edec;
 }
 
 .go-btn {
-    color: #fafafa!important;
-    font-family: 'Architects Daughter',cursive;
+    color: white!important;
+    font-family: 'Raleway',cursive;
     text-decoration: none;
+}
+
+.go-btn:hover {
+    color: #ffb6c1!important;
 }
 
 
