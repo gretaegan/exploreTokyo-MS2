@@ -398,5 +398,19 @@ div#map {
     font-size: 22px;
 }
 
+/* 404 Page*/
+
+.error-body {
+    font-family: 'Architects Daughter', cursive;
+}
+
+.error-header {
+    padding-top: 100px;
+}
+
+.error-header-small {
+    padding-top: 50px;
+}
+
 
 
