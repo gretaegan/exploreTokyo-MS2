@@ -42,7 +42,7 @@ body {
 }
 
 .hero-image {
-    background-image: url("../images/tokyo-hero-dusk.jpg");
+    background-image: url("../images/japan-hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -54,9 +54,8 @@ body {
 .hero-text-box {
     position: absolute;
     color: #fafafa;
-    font-size: 22px;
-    top: 30%;
-    left: 20%;
+    top: 35%;
+    left: 28%;
 }
 
 .hero-header {
@@ -142,7 +141,7 @@ body {
     background-color: #ffb6c1;
     margin-top: 12px;
     margin-bottom: 14px;
-    margin-left: 130px;
+    margin-left: 180px;
 }
 
 .request-link {
@@ -153,15 +152,13 @@ body {
 
 #tokyoCarousel {
     padding-top: 24px;
-    height: auto;
     width: 90%;
     padding-left: 20px;
 }
 
 .carousel-img {
-    height: auto;
     width: 90%;
-    object-fit: cover;
+    
 }
 
 /*---------Explore section*/
@@ -174,13 +171,24 @@ body {
 .area-options {
     background-color: #f5edec;
     align-items: center;
+    padding-bottom: 28px;
+    padding-top: 22px;
 }
 
 .explore-hdg {
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 20px;
     text-align: center;
     font-family: 'Raleway',sans-serif;
+}
+
+.explore-information {
+    text-align: center;
+    font-family: 'Raleway',sans-serif;
+    padding-top: 20px;
+    padding-bottom: 22px;
+    left: 20px;
+    right: 20px;
 }
 
 .area-card {
@@ -257,10 +265,6 @@ div#map {
     color: white!important;
     padding-top: 40px;
     margin-top: 20px;
-}
-
-.map-link:hover {
-    color: #fafafa;
 }
 
 
@@ -359,9 +363,9 @@ div#map {
 
 .contact-banner {
     background-image: url('../images/tokyo-blossoms.jpeg');
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    width: 100%;
+    padding-left: 0rem;
+    padding-right: 0rem;
     height: 30vh;
     background-repeat: no-repeat;
     background-position: center;
