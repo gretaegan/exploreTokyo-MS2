@@ -1,5 +1,7 @@
 # Explore Tokyo
 
+![a mockup of my site across various devices] <img src="assets/images/sitepic.jpg" style="margin: 0;">
+
 This website is my second Milestone Project on the Code Institute Full Stack Web Developer Course.
 
 My project is a travel website about Tokyo, Japan. It is my second Milestone project on the Code Institute Full Stack Software Developer course.  I chose this project because I have travelled to Tokyo many, many times and I hope that, by looking at my website, others
@@ -107,7 +109,7 @@ The feel of the site is both informative and professional and information is eas
 
 I used Figma for creating the wireframes for this project.
 
-Still to add wireframes //// 
+The link to my wireframes can be found [here](https://www.figma.com/files/project/23855516/Milestone-project2)
 
 
 # Features
@@ -152,7 +154,7 @@ Still to add wireframes ////
 * Lighthouse was used to check performance.
  
 
-# Testing
+# Testing with Code Validators
 
 I used the code validators :
 
@@ -162,6 +164,13 @@ I used the code validators :
 
 Results: 
 
+* HTML Results can be found [here]()
+
+* CSS Results can be found [here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgretaegan.github.io%2FexploreTokyo-MS2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  The results indicate several warnings and errors, however they are within the Bootstrap files and not my own CSS so I am happy that my own CSS code has no issues. 
+
+* I used JS Hint throughout my project while coding, to check for errors in my code as I wrote it. Any issues found were minor and contained to missing semi-colons and 
+  syntax problems. I was able to use this method to make sure there were no issues with my Javascript code throughout the project. 
 
 ## Testing User Stories
 
@@ -194,19 +203,37 @@ to contact the company without any issues.
 
 
 
-## Testing
+## Further Testing
+
+* Lighthouse was used to test the performance of my site on both mobile and desktop. 
+
+ <img src="assets/images/lighthouse-desktop.jpg" style="margin: 0;">
+
+ * On desktop, I am very happy with these results. 
+
+ <img src="assets/images/lighthouse-mobile.jpg" style="margin: 0;">
+
+ * On mobile, performance is not as good as I would like. This could be improved in future by implementing a splash screen.
+ 
 
 
 
 ## Resources
 
-* Code Institute Course content - I learned so much from the content of the CI course and it provided inspiration and a lot of fundamental ideas for this project. 
+* Code Institute Course content - I learned so much from the content of the CI course and it provided inspiration and a lot of fundamental ideas for this project. My 
+EmailJS section was heavily referenced from the Rosie Project in the Interactive Frontend Development module of the course. 
 * Code Institute Slack community - Without the help and experiences of this community I would have not been able to solve many of the issues I had with coding this project. 
 * Google Chrome Developer Tools - DevTools provided endless help in finding busgs in my code, and testing my code via the console and Lighthouse. 
 * Google Maps API documentation- I have referenced all code help and code used in my map.js file. The documentation was heavily referenced and relied on to complete this 
 project. 
-* Stackoverflow- All code help and code that was sourced from Stack Overflow has been refereneced in comments in my code throughout this project. 
-* Bootstrap documentation - All code that was taken from the Bootstrap docs has been referenced within my project, namely the carousel and the navbar. 
+* EmailJS documentation- I referenced this while writing the code to make my contact page interactive. 
+* Stackoverflow- All code help and code that was sourced from Stack Overflow has been refereneced in comments in my code throughout this project. It was namely used for 
+ help with getting the Google Map to center when clicking on a button. 
+* [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) documentation was referenced for the Navbar and the Carousel on the home page. 
+* [W3Schools](https://www.w3schools.com/) - I often relied on W3 Schools website to gain a better understanding of using CSS to lay out my website, namely making my buttons vertically aligned on the 
+  Explore page. 
+* [Font Awesome](https://fontawesome.com/) was used to provide the icons used throughout this project. 
+* [JQuery](https://jquery.com/) was used to make writing my Javascript code simplier.
 
 
 # Bugs and Fixes
@@ -231,8 +258,13 @@ This site was deployed through GitHub Pages. The steps I took to deploy were as 
 
 # Credits 
 
-## Content 
-
+## Content and Resources 
+* Content was mainly written by myself. Any code that was not my own has been referenced in comments. 
+* In particular, [Google Maps API documentation](https://developers.google.com/maps/documentation/javascript/overview) and [Google Places Library](https://developers.google.com/maps/documentation/javascript/places) documentation were referenced often. 
+ 
+* Code Institute Full Stack Software Developer course provided me with the knowledge and skills to be able to create this website. 
+* [Font Awesome](https://fontawesome.com/) was used to provide the icons used throughout this project. 
+* [JQuery](https://jquery.com/) was used to make writing my Javascript code simplier. 
 
 
 # Acknowledgements 
