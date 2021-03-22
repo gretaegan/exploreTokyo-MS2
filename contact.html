@@ -65,25 +65,25 @@
                 <hr class="pink-line">
             </div>
             <div class="contact-box">
-                <form id="contactForm" class="contact-form">
+                <form id="contactForm"  class="contact-form">
                     <div class="mb-3">
-            <label for="name" class="form-label">Full Name </label>
-            <input type="text" class="form-control" id="name" placeholder="Your name">
-           </div>
-         <div class="mb-3">
-            <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="hello@myemail.com">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="input-group">
-                <span class="input-group-text"></span>
-                <textarea id="textarea" class="form-control" aria-label="textarea" placeholder="Your message"></textarea>
-                </div>
-       <div class="mb-3 form-check">
-           <input type="checkbox" class="form-check-input" id="newslettercheck">
-           <label class="form-check-label" for="newslettercheck">Want to subscribe to our newsletter?</label>
-         </div>
-                    <button type="submit" value="send" class="btn btn-hi"> Submit! </button>
+                        <label for="name" class="form-label">Full Name </label>
+                        <input type="text" name="from_name" class="form-control" id="name" placeholder="Your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" name="from_email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="hello@myemail.com">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text"></span>
+                        <textarea id="textarea" name="message_text" class="form-control" aria-label="textarea" placeholder="Your message"></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="newslettercheck">
+                        <label class="form-check-label" for="newslettercheck">Want to subscribe to our newsletter?</label>
+                    </div>  
+                    <button type="submit" class="btn btn-hi"> Submit! </button>
                 </form>
             </div>
         </div>
