@@ -166,7 +166,10 @@ I used the code validators :
 
 Results: 
 
-* HTML Results can be found [here]()
+* HTML Results showed warnings relating to my use of hyphens in the comments of my html. Because this is a project, I have left the comments in for clarity, but shortened them. 
+ - There was a warning about using a heading in my footer, so I have included one for screen readers only. 
+ - There were warnings about unclosed div elements which I have since closed and fixed.
+ - 
 
 * CSS Results can be found [here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgretaegan.github.io%2FexploreTokyo-MS2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
   The results indicate several warnings and errors, however they are within the Bootstrap files and not my own CSS so I am happy that my own CSS code has no issues. 
@@ -313,7 +316,7 @@ https://github.com/gretaegan/exploreTokyo-MS2.git
 
 # Acknowledgements 
 * To my mentor Oulawafemi Medale for his guidance and help with my project, and for his endless patience. 
-* To the tutor support team, in particular Igor and Cormac, who helped me to find the solutions to problems I had while coding this project. 
+* To the tutor support team who helped me to find the solutions to problems I had while coding this project. 
 * To the entire Slack community for providing help when I needed it, no matter how silly my questions seemed. 
 * To my cohort, the Springboard September 2020 group who have been an endless source of help, advice and laughs. 
 * To my family for putting up with my constant talking about my project and requests for coffee. 
