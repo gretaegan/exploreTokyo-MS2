@@ -52,7 +52,8 @@ of the option of joining a group tour.
 * The images I used for this project were sourced from Google and have been referenced in the content section of this Readme.
 
 * I wanted images to show both the city aspect of Tokyo, the neon lights and skyscrapers and crowds, and also the cherry blossoms, national parks and shrines.
-I feel it was important to show both aspects of Tokyo to inspire potential visitors.  
+I feel it was important to show both aspects of Tokyo to inspire potential visitors. 
+I used the colors: #FFB6C1 (light pink), #2C3237da (lighter gray) and #2C3237 (dark gray) mostly. 
 
 * I included a carousel on the main page to showcase three main highlights of Tokyo, the Golden Gai area of Shinjuku, the famous Shibuya crossing and a shot of the 
 Imperial palace against the skyscrapers of Tokyo. 
@@ -302,7 +303,7 @@ https://github.com/gretaegan/exploreTokyo-MS2.git
 - "Asakusa-Sensoji" - www.jw-webmagazine.com
 - "Golden Gai" - www.byfood.com 
 - "Imperial palace" - www.japanistry.com 
-- "Japan hero" - 
+- "Japan hero" - www.isipionline.it 
 - "Meiji" - www.old.tokyo.info 
 - "Shibuya pic" - www.wikimedia.org 
 - "Shibuya crossing" - www.blog.airpaz.com 
