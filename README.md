@@ -1,6 +1,6 @@
 # Explore Tokyo
 
-![a mockup of my site across various devices](responsive.jpg)
+![mockup](assets/images/responsive.jpg)
 
 This website is my second Milestone Project on the Code Institute Full Stack Web Developer Course.
 
@@ -23,9 +23,9 @@ of the option of joining a group tour.
 
 1. To understand the brand at first glance, and to see what the company is offering.
 
-1. To see highlights of Tokyo and see pictures of what the city can offer a tourist .
+1. To see highlights of Tokyo and see pictures of what the city can offer a tourist . To be inspired to book a trip.
 
-1. To find information about Tokyo presented in a concise and easy to read manner.
+1. To find information about Tokyo presented in a concise and easy to read manner. To get a feel for Tokyo just by looking at the site.
 
 1. To be able to look up various hospitality and find recommendations on a Google map .
 
@@ -34,32 +34,34 @@ of the option of joining a group tour.
 
 *As a returning user of this website, I want*
 
-1. To find the website functioning.
+1. To find the website functioning. To be able to come back and use the map to locate various hospitality.
 
-1. To be able to contact the travel company without any issues.
+1. To be able to contact the travel company without any issues. To find the contact form functioning and to find the company's details easily.
 
 *As the business owner, I want*
 
-1. A website that showcases the product and inspires the user to want to travel. 
+1. A website that showcases the product and inspires the user to want to travel. To show the best of Tokyo and to make the user want to book a trip.
 
-1. For users to be able to contact me without any problems. 
+1. For users to be able to contact me without any problems. The site should be functioning at all times and easy to use.
 
 # Design
 
 ### Images Used
 .
 
-* The images I used for this project were sourced from Google and have been referenced in the acknowledgments of this Readme.
+* The images I used for this project were sourced from Google and have been referenced in the content section of this Readme.
 
 * I wanted images to show both the city aspect of Tokyo, the neon lights and skyscrapers and crowds, and also the cherry blossoms, national parks and shrines.
 I feel it was important to show both aspects of Tokyo to inspire potential visitors.  
 
-* // photo credits here?
+* I included a carousel on the main page to showcase three main highlights of Tokyo, the Golden Gai area of Shinjuku, the famous Shibuya crossing and a shot of the 
+Imperial palace against the skyscrapers of Tokyo. 
 
 ### Typography
 
 * I have used the fonts 'Architects Daughter' and 'Raleway' in this project. I wanted to convay a feeling of casual professionalism and also to use a font that I felt was
-fitting with the Japanese theme of the site. Architects Daughter is the perfect amount of casual and artistic and I think it has captured the feel of the site well. 
+fitting with the Japanese theme of the site.
+ Architects Daughter is the perfect amount of casual and artistic and I think it has captured the feel of the site well. 
 Raleway is a font that is both professional looking and casual so I have used it for all minor headings and information paragraphs and am pleased with the look it convays.
  
 
@@ -89,18 +91,18 @@ email with the details of the user.
 ### Colors 
 
 * The colors I have used in this website have been chosen because I wanted to fit in with the theme of cherry blossoms. When people think of Tokyo they are initially 
-drawn to an image of a busy city, but I wanted to convay the side of Tokyo that is beautiful and filled with beautiful pink flowers. 
+drawn to an image of a busy city, but I wanted to show the side of Tokyo that is more nature-focused and filled with beautiful pink flowers. 
 I have used a dark colored navbar because I feel like it compliments the site well and provides a professional feel. 
 
 * I chose a Hero image that shows a picture of every side of Tokyo that I want to show - a temple, a city and cherry blossoms. I felt it was important to not focus on the 
-city side of Tokyo and to also include to beautiful, nature side of cherry blossom trees, and the historical side showing a temple too. 
+city side of Tokyo as it might discourage visitors who do not enjoy a city break.
 
 
 
 ### Overall Feel
 
 Overall I wanted this website to show the many sides of Tokyo that I have learned of myself, the busy city side, the ancient shrines and temples and the beautiful nature of cherry blossom trees and 
-national gardens. I feel like by including the chosen images, by using the pink based color schemes and by the presentation of my information I have done that. 
+national gardens. I think that by including the chosen images, by using the pink based color schemes and by the presentation of my information I have done that. 
 The feel of the site is both informative and professional and information is easy to access. The company is easily contacted and navigation is simple and easy. 
 
 
@@ -207,13 +209,36 @@ to contact the company without any issues.
 
 * Lighthouse was used to test the performance of my site on both mobile and desktop. 
 
- <img src="assets/images/lighthouse-desktop.jpg" style="margin: 0;">
+ ![desktop](assets/images/lighthouse-desktop.jpg)
 
  * On desktop, I am very happy with these results. 
 
- <img src="assets/images/lighthouse-mobile.jpg" style="margin: 0;">
+![mobile](assets/images/lighthouse-mobile.jpg)
 
  * On mobile, performance is not as good as I would like. This could be improved in future by implementing a splash screen.
+
+ Overall I am happy with the results from Lighthouse.
+
+ * This project has been tested on various devices such as :
+  - iPhone 8
+  - iPhone XR
+  - Samsung Galaxy A51
+  - iPad Pro 
+  - Dell G7
+  - Macbook Air 13'  
+
+ ## Bugs
+
+ * There was an issue with the home page showing a large amount of white space to the right when being used on smaller screens such as mobile phones.
+ This was resolved by adding the g-0 class to the hero image and removing all unneccesary padding.
+
+ * The contact form was giving a 400 Bad Request error in the console when I tested it. Eventually this was resolved by using a different service ID in my template on 
+  EmailJS website.
+
+  * The navbar toggler was not working as intended initially, this was resolved by updating the code to use Bootstrap 5 as opposed to older versions that I had previously used.
+
+  * There was an issue with my JS code for the Google Map. The latitude in my explore data array was not being read, and showing in my console as undefined. 
+  This was eventually solved by using a deconstructed array to declare my latitude and longitude variables. 
  
 
 
@@ -236,10 +261,6 @@ project.
 * [JQuery](https://jquery.com/) was used to make writing my Javascript code simplier.
 * [Figma](https://www.figma.com/) to create the wireframes for this project. 
 * [Tripadvisor](https://www.tripadvisor.ie/) for information on various attractions in Tokyo. 
-
-
-# Bugs and Fixes
-
 
 
 
@@ -271,7 +292,23 @@ https://github.com/gretaegan/exploreTokyo-MS2.git
 
 ## Content
 * Content was mainly written by myself. Any code that was not my own has been referenced in comments and has been included in the Resources section of this READMe.
-* Photos from this project were sourced from : 
+* Google Maps API documentation provided most of the help and reference for my JS Code.
+* Bootstrap for my carousel and navbar.
+* EmailJS and the course content for my contact form.
+* Photos from this project were sourced from Google and in particular:
+- "Akihabara" - www.lonelyplanet.com
+- "Asakusa-Sensoji" - www.jw-webmagazine.com
+- "Golden Gai" - www.byfood.com 
+- "Imperial palace" - www.japanistry.com 
+- "Japan hero" - 
+- "Meiji" - www.old.tokyo.info 
+- "Shibuya pic" - www.wikimedia.org 
+- "Shibuya crossing" - www.blog.airpaz.com 
+- "Shinjuku Gyoen" - www.pinterest.com 
+- "Shinjuku" - www.sojurnermoxie.com 
+- "Skytree" - www.wikipedia.com 
+- "Takeshita" - www.scoopnest.com 
+- "Tokyo Blossoms" - www.japancherryblossom.com 
 
 
 # Acknowledgements 
