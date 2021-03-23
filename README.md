@@ -166,9 +166,8 @@ I used the code validators :
 
 Results: 
 
-* HTML Results can be found [here]()
- - There were warnings about unclosed div elements which I have since closed and fixed.
- - There was a warning about my aria-controls label in the navbar which has since been fixed. 
+* HTML Results can be found [here](https://validator.w3.org/nu/?doc=https%3A%2F%2Fgretaegan.github.io%2FexploreTokyo-MS2%2F)
+- There is a warning about section headings in my footer. I do not feel a heading is relevant to my footer so I have added it for screen readers only.
 
 
 * CSS Results can be found [here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgretaegan.github.io%2FexploreTokyo-MS2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
