@@ -135,10 +135,11 @@ body {
 }
 
 .request-btn {
-    background-color: #ffb6c1;
+    background-color: #ffb6c1!important;
+    width: 50%;
     margin-top: 12px;
     margin-bottom: 14px;
-    margin-left: 180px;
+    margin-left: 150px;
 }
 
 .request-link {
