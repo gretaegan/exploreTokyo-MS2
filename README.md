@@ -166,10 +166,10 @@ I used the code validators :
 
 Results: 
 
-* HTML Results showed warnings relating to my use of hyphens in the comments of my html. Because this is a project, I have left the comments in for clarity, but shortened them. 
- - There was a warning about using a heading in my footer, so I have included one for screen readers only. 
+* HTML Results can be found [here]()
  - There were warnings about unclosed div elements which I have since closed and fixed.
- - 
+ - There was a warning about my aria-controls label in the navbar which has since been fixed. 
+
 
 * CSS Results can be found [here](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fgretaegan.github.io%2FexploreTokyo-MS2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
   The results indicate several warnings and errors, however they are within the Bootstrap files and not my own CSS so I am happy that my own CSS code has no issues. 
